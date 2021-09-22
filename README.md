@@ -16,3 +16,12 @@ A library to calculate length of a line in a cartesian system
 ```bash
 ./gradlew build
 ````
+
+## How to Use
+To calculate length of a line, define two point objects and call distanceTo(Point other) method. For example:
+```java
+Point point1 = new Point(0, 0);
+Point point2 = new Point(3, 4);
+
+double length = point1.distanceTo(point2);
+```

@@ -19,4 +19,11 @@ public class PointTest {
         Point point2 = new Point(0, 5);
         assertEquals(5, point1.distanceTo(point2), 0.0001);
     }
+
+    @Test
+    public void twoPointsWithTwoDifferentAttributesShouldReturnResult() {
+        Point point1 = new Point(0, 0);
+        Point point2 = new Point(3, 4);
+        assertEquals(5, point1.distanceTo(point2), 0.0001);
+    }
 }

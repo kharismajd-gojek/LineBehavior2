@@ -1,18 +1,15 @@
 package com.geometry;
 
 public class Point {
-    private int x;
-    private int y;
+    private final int x;
+    private final int y;
 
     public Point(int x, int y) {
         this.x = x;
         this.y = y;
     }
 
-    public int distanceTo(Point other) {
-        if (this.x == other.x) {
-            return Math.abs(this.y - other.y);
-        }
-        return Math.abs(this.x - other.x);
+    public double distanceTo(Point other) {
+        return Math.sqrt(Math.pow(this.x - other.x, 2) + Math.pow(this.y - other.y, 2));
     }
 }
